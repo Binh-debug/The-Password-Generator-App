@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project_#18 - The Password Generator App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="heading">Password Generator</h1>
+        <h2 class="display-password">Password</h2>
+        <form action="" class="optional-password">
+          <label for="">Number of Characters</label>
+          <div id="length-password">
+            <input type="range" id="length-range" min="6" max="50" value="6" />
+            <input
+              type="number"
+              id="length-number"
+              min="6"
+              max="50"
+              value="6"
+            />
+          </div>
+          <label for="number">Number</label>
+          <input type="checkbox" id="number" />
+
+          <label for="symbols">Symbols</label>
+          <input type="checkbox" id="symbols" />
+
+          <label for="uppercase">Uppercase</label>
+          <input type="checkbox" id="uppercase" />
+
+          <input type="submit" id="btn-generate" value="Generate Password" />
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

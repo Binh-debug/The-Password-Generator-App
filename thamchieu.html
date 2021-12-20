@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // tham chiếu : array , object, function -> gán địa chỉ - địa chỉ này trỏ tới ô nhớ chưa giá trị
+      // tham trị : number, string, boolean, undefine, null, nan, symbol -> gán giá trị
+
+      let arr1 = [1, 2, 3, 4, 5]; // arr1 được gán địa chỉ
+      // let arr2 = [1, 2, 3, 4, 5];
+      let arr2 = arr1;
+
+      console.log(arr1, arr2);
+
+      let cloneArr = [...arr2]; /// [1,2,3,4,5] - spread trong ES6 - phân rã mảng
+
+      cloneArr.length = 1;
+
+      //   let max = Math.max(...arr1);
+
+      console.log(arr1, arr2);
+      // khi thay đổi 1 trong 2 array thì ô nhớ mà địa chỉ đang trỏ tới sẽ bị thay đổi
+
+      //   console.log(arr1 == arr2);
+    </script>
+  </body>
+</html>
